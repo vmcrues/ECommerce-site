@@ -1,0 +1,9 @@
+<h1>Welcome to Crues's Online Pet Store</h1>
+
+<% if current_user.nil? %>
+  <h5>Hello there!</h5>
+<% else %>
+  <h5> Welcome Back <strong><%= current_user.name %></strong></h5>
+<% end %>
+
+<%= render 'dropdown'%>
